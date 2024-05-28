@@ -1,0 +1,88 @@
+
+
+
+<div class="card">
+  <div class="card-header">
+    Add your own Products
+  </div>
+  <div class="card-body">
+    <form id="productForm">
+        <div class="row">
+            <div class="col-xs-4 col-md-4">
+                <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Product Name" required>
+            </div>
+            <div class="col-xs-4 col-md-4">
+                <input type="text" class="form-control form-control-lg" id="serial" name="serial" placeholder="Serial Number" required>
+            </div>
+            <div class="col-xs-4 col-md-4">
+                <input type="text" class="form-control form-control-lg" id="warrantyLength" name="warrantyLength" placeholder="Warranty Length" required>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg">Add product</button>
+                <button type="button" class="btn btn-primary btn-lg" id="viewAllProductsBtn">View All Products</button>
+            </div>
+        </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-header">
+    Add an already registered Product
+  </div>
+  <div class="card-body">
+    <form id="productForm">
+        <div class="row mb-3">
+            <div class="col-4">
+                <label for="productSelection" class="form-label">Select Product:</label>
+                <select class="form-select" id="productSelection" onchange="fillProductDetails()">
+                    <option value="">Select a Product</option>
+                    <option value="manual_input">Manual Input</option>
+                    <option value="Product1">CombiSpin Washing Machine</option>
+                    <option value="Product2">CombiSpin + Dry Washing Machine</option>
+                    <option value="Product3">CombiGrill Microwave</option>
+                    <option value="Product4">K5 Water Pump</option>
+                    <option value="Product5">K5 Heated Water Pump</option>
+                    <option value="Product6">Smart Switch Lite</option>
+                    <option value="Product7">Smart Switch Pro</option>
+                    <option value="Product8">Smart Switch Pro V2</option>
+                    <option value="Product9">Smart Heated Mug</option>
+                    <option value="Product10">Smart Bulb 001</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4">
+                <input type="text" class="form-control form-control-lg" id="productName" name="productName" placeholder="Product Name" required>
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control form-control-lg" id="productSerial" name="productSerial" placeholder="Serial Number" required>
+            </div>
+            <div class="col-4">
+                <input type="number" class="form-control form-control-lg" id="productWarranty" name="productWarranty" placeholder="Warranty Length" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Add product</button>
+            </div>
+        </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-header">
+    Products
+  </div>
+  <div class="card-body" id="product-items">
+    <ul class="list-group" id="product-list">
+    </ul>
+  </div>
+
+</div>
+</div>
